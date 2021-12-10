@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea asincrona</title>
+</head>
+<body>
+    <h1>Tarea asincrona</h1>
+
+    <p> Ingrese el valor del Radio <input type="text" name="n1" id="v1"> </p>
+    
+
+    <p> diametro <input type="text" name="sum" id="sum"></p>
+    <p> perimetro <input type="text" name="per" id="per"></p>
+    <p> area <input type="text" name="area" id="area"></p>
+    
+
+    <button onclick="calcular()">calcular</button>
+    <script type="text/javascript">
+
+        function calcular(){
+            let v1= document.getElementById("v1").value
+            let vv1= parseInt(v1,10)
+            let diametro= v1*2
+            let perimetro= v1*2*Math.PI
+            let area= Math.PI*(v1*v1)
+           
+            document.getElementById("sum").value=diametro
+            document.getElementById("per").value=perimetro
+            document.getElementById("area").value=area
+        }
+    </script>
+</body>
+</html>
